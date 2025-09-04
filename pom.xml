@@ -16,9 +16,7 @@
         <module>xml</module>
         <module>mock</module>
         <module>http</module>
-        <module>javadoc</module>
         <module>swing</module>
-        <module>gwt</module>
         <module>cdi</module>
     </modules>
 
@@ -70,8 +68,8 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <maven.compiler.source>5</maven.compiler.source>
-        <maven.compiler.target>5</maven.compiler.target>
+        <maven.compiler.source>21</maven.compiler.source>
+        <maven.compiler.target>21</maven.compiler.target>
 
         <testng.version>6.2</testng.version>
         <servlet.api.version>2.4</servlet.api.version>
@@ -130,17 +128,6 @@
                         <suiteXmlFiles>
                             <suiteXmlFile>src/test/AllTests.tng.xml</suiteXmlFile>
                         </suiteXmlFiles>
-                    </configuration>
-                </plugin>
-
-                <!-- Javadoc generation settings -->
-                <plugin>
-                    <artifactId>maven-javadoc-plugin</artifactId>
-                    <version>2.7</version>
-                    <configuration>
-                        <quiet/>
-                        <!-- WTF! http://jira.codehaus.org/browse/MJAVADOC-268 -->
-                        <detectOfflineLinks>false</detectOfflineLinks>
                     </configuration>
                 </plugin>
 
